@@ -47,17 +47,17 @@ const routes = [
     {
         path: '/Jiofi',
         name: 'mobile',
-        component: () => import('@/components/pages/signin/icons'), 
+        component: () => import('@/components/pages/signin/joifi'), 
     },
     {
         path: '/fiber',
         name: 'mobile',
-        component: () => import('@/components/pages/signin/icons'), 
+        component: () => import('@/components/pages/signin/jiofiber'), 
     },
     {
         path: '/link',
         name: 'mobile',
-        component: () => import('@/components/pages/signin/icons'), 
+        component: () => import('@/components/pages/signin/joilink'), 
     },
   
 ]

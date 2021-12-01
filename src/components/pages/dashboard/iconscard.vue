@@ -1,34 +1,82 @@
 <template>
-    <div class="app-card-li app-card-size">
-        <div class="jds-card border-0 app-card-reset overflow-hidden myjio_bg_card">
-            <div class="app-icon-top">
-                <span class="icon-img">
-                    <img src="../../../assets/images/MyJio.svg" alt="MyJio">
-                </span>
-                <div class="mt-1 text-white fw-bold">MyJio</div>
-            </div>
-            <img src="../../../assets/images/card_images/myjiobg.jpg" class="w-100" alt="Myjio">
-            <div class="jds-card-body p-0">
-                <div class="circle-app-details myjio_bg text-white">
-                    <h5 class="h5 font-black mb-2">Step into your<br>
-                    digital life.</h5>
-                    <div class="body-02 fw-medium">Recharge, check balance,<br>
-                    install apps and more.
+<div class="row justify-content-between my-5">
+    <div class="col-lg-3 col-md-6 col-12 app-card-li app-card-size" v-for="jioapp in jioapps" :key="jioapp.id">
+            <div  class="jds-card border-0 app-card-reset overflow-hidden myjio_bg_card" :v-for="(cardhex, index) in jioapp.cardhex"
+                            :key="index"
+                            :style="{ 'background-color': cardhex }">
+                <div class="app-icon-top">
+                    <span class="icon-img">
+                        <img :src="jioapp.img" alt="MyJio"> 
+                    </span>
+                    <div class="mt-1 text-white fw-bold">MyJio</div>
+                </div>
+                <img  :src="jioapp.backgroundimg" class="w-100" alt="Myjio"> 
+                <div class="jds-card-body p-0" v-for="(hex, index) in jioapp.hex"
+                            :key="index"
+                            :style="{ 'background-color': hex }"> {{ hex }}
+                    <div class="circle-app-details myjio_bg text-white" v-for="(hoverhex, index) in jioapp.hoverhex"
+                            :key="index"
+                            :style="{ 'background-color': hoverhex }"> 
+                        <h5 class="h5 font-black mb-2">Step into your<br>
+                        digital life.</h5>
+                        <div class="body-02 fw-medium">Recharge, check balance,<br>
+                        install apps and more.
+                        </div>
+                        <div class="app-card-footer">
+                    <div class="jds-chip large" tabindex="0">
+                        <div class="body-02">Discover more</div>
                     </div>
                 </div>
-            </div>
-            <div class="app-card-footer myjio_bg_footer mt-auto">
-                <div class="jds-chip large" tabindex="0">
-                    <div class="body-02">Discover more</div>
+                    </div>
                 </div>
+                
             </div>
-        </div>
     </div>
+</div>
+   
 </template>
 <script>
 export default {
     name: 'iconscard',
-    props: ['Discover', 'iconstop', 'background'],
+    data() {
+        return {
+            jioapps:[
+                {
+                    id:1,
+                    img: require('../../../assets/images/MyJio.svg'),
+                    backgroundimg: require('../../../assets/images/card_images/myjiobg.jpg'),
+                    hex: ['#cd3400'],
+                    hoverhex: ['#cd3400'],
+                    cardhex: ['#cd3400'],
+                },
+                 {
+                    id:2,
+                    img: require('../../../assets/images/Saavan.svg'),
+                    backgroundimg: require('../../../assets/images/card_images/jiosaavnbg.jpg'),
+                    hex: ['#0ccdbc'],
+                    hoverhex: ['#0ccdbc'],
+                    cardhex: ['#0ccdbc'],
+                },
+                 {
+                    id:3,
+                    img: require('../../../assets/images/ic_jiotv.svg'),
+                    backgroundimg: require('../../../assets/images/card_images/jiocinemabg.jpg'),
+                    hex: ['#fa0025'],
+                    hoverhex: ['#fa0025'],
+                    cardhex: ['#fa0025'],
+                },
+                 {
+                    id:4,
+                    img: require('../../../assets/images/ic_jiocinema.svg'),
+                    backgroundimg: require('../../../assets/images/card_images/jiotvbg.jpg'),
+                    hex: ['#d63b8e'],
+                    hoverhex: ['#d63b8e'],
+                    cardhex: ['#d63b8e'],
+                }
+            ]
+            
+        }
+    },
 }
 </script>
 <style lang="scss" scoped>
@@ -52,7 +100,7 @@ export default {
     width: 100%;
 }
 .myjio_bg_card {
-    background-color: #cd3400;
+    // background-color: #cd3400;
     border-radius: 25px !important;
 }
 .app-icon-top {
@@ -62,8 +110,15 @@ export default {
     text-align: center;
 }
 .icon-img {
+    margin:5px !important;
     width: 35px !important;
     height: 35px !important;
+}
+@media (min-width: 992px){
+.col-lg-3 {
+    flex: 0 0 auto;
+    width: 24%;
+}
 }
 .circle-app-details {
     border-top-right-radius: 50%;
@@ -84,7 +139,7 @@ export default {
     border-top-left-radius: 50%;
     z-index: -1;
 }
-.myjio_bg::before {
+.myjio_bg {
     background-color: #cd3400;
 }
 .jds-chip.large {
@@ -102,7 +157,7 @@ export default {
 .app-card-footer {
     position: relative !important;
     z-index: 1 !important;
-    padding: 0 1.25rem 2rem !important;
+    padding-top:15px !important;
     border-bottom-left-radius: 2.625rem !important;
     border-bottom-right-radius: 2.625rem !important;
 }

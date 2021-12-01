@@ -1,18 +1,18 @@
 <template>
-    <div>
-        <div class="flip-card my-2">
+    <div class="row justify-content-between" >
+        <div class="col-md-4 col-12 flip-card my-2" v-for="(recharge,index) in reacharegeoffers" :key="index">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <div class="card border-0 plan-card-reset overflow-hidden bg-white px-3">
                         <div class="text-center text-white top-rounded">
                             <div class="top-circle-copy">
                                 <div class="jio-badge text-white d-inline-flex justify-content-center align-items-center large pill secondaryred-100-bg border-0 mb-2">
-                                    <div class="jio-badge-overline"> {{ jiodiscound }}</div>
+                                    <div class="jio-badge-overline"> {{ recharge.jiodiscound }}</div>
                                 </div>
                                 <div class="display-2 font-black">
-                                   <span class="jioFont-rupee h2 align-text-top mr-1 pt-2">&#8377;</span>{{ rate }}
+                                   <span class="jioFont-rupee h2 align-text-top mr-1 pt-2">&#8377;</span>{{ recharge.rate }}
                                 </div>
-                                <div class="h5 font-medium"> {{ jioexdensions }}</div>
+                                <div class="h5 font-medium"> {{ recharge.jioexdensions }}</div>
                             </div>
                         </div>
                         <div class="circle-panel">
@@ -20,12 +20,12 @@
                                 <div class="circle-plan-details">
                                     <div class="d-flex justify-content-between data-panel">
                                         <div class="">
-                                            <div class="h6 font-medium mb-1">{{ validity }}</div>
-                                            <div class="h5 font-bold">{{ days }}</div>
+                                            <div class="h6 font-medium mb-1">{{ recharge.validity }}</div>
+                                            <div class="h5 font-bold">{{ recharge.days }}</div>
                                         </div>
                                         <div class="">
-                                            <div class="h6 font-medium mb-1">{{ benefits }} </div>
-                                            <div class="h5 font-bold"> {{ dailydata }}</div>
+                                            <div class="h6 font-medium mb-1">{{ recharge.benefits }} </div>
+                                            <div class="h5 font-bold"> {{ recharge.dailydata }}</div>
                                         </div>
                                     </div>
                                     <div class="d-flex app-icons-list align-items-end">
@@ -60,8 +60,8 @@
                             <div class="card-back-inner p-0 border-0">
                                 <div class="card-body-back-inner p-0 mb-5">
                                     <div class="h5 font-medium back-list mb-0">
-                                        <div class="back-list-li"> {{ backvalitity }}</div>
-                                        <div class="back-list-li"> {{ smslimit }}</div>
+                                        <div class="back-list-li"> {{ recharge.backvalitity }}</div>
+                                        <div class="back-list-li"> {{ recharge.smslimit }}</div>
                                     </div>
                                 </div>
                                 <div class="jio-plan-app pt-5 mt-5">
@@ -111,9 +111,48 @@
 <script>
 export default {
     name:'card',
-    props: [
-        'jiodiscound', 'jioexdensions', 'rate', 'validity', 'days', 'benefits', 'dailydata', 'backvalitity', 'smslimit',
-    ]   
+    data() {
+        return {
+            reacharegeoffers:[
+                {
+                    id:1,
+                    jiodiscound: '20% JioMart Maha Cashback',
+                    jioexdensions: 'Truly Unlimited Calls!',
+                    rate: '249',
+                    validity: 'Validity',
+                    days: '28 days',
+                    benefits: 'Benefits',
+                    dailydata: '2 GB/day',
+                    backvalitity: 'Unlimited Voice Call',
+                    smslimit: 'Unlimited SMS (100/day)',
+                },
+                {
+                    id:2,
+                    jiodiscound: '20% JioMart Maha Cashback',
+                    jioexdensions: 'Truly Unlimited Calls!',
+                    rate: '249',
+                    validity: 'Validity',
+                    days: '28 days',
+                    benefits: 'Benefits',
+                    dailydata: '2 GB/day',
+                    backvalitity: 'Unlimited Voice Call',
+                    smslimit: 'Unlimited SMS (100/day)',
+                },
+                {
+                    id:3,
+                    jiodiscound: '20% JioMart Maha Cashback',
+                    jioexdensions: 'Truly Unlimited Calls!',
+                    rate: '249',
+                    validity: 'Validity',
+                    days: '28 days',
+                    benefits: 'Benefits',
+                    dailydata: '2 GB/day',
+                    backvalitity: 'Unlimited Voice Call',
+                    smslimit: 'Unlimited SMS (100/day)',
+                },
+            ]
+        }
+    },  
 }
 </script>
 <style lang="scss" scoped>

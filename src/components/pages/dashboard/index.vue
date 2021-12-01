@@ -248,20 +248,8 @@
             </div>
             <!-- END:  Our Services ========= -->
             <!-- START: Popular plans ========= -->
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <card  :jiodiscound="jiodiscound" :jioexdensions="jioexdensions"  :rate="rate" :validity="validity" :benefits="benefits" :days="days" :dailydata="dailydata" :backvalitity="backvalitity" :smslimit="smslimit">
-                    </card>
-                </div>
-                 <div class="col-lg-4">
-                    <card  :jiodiscound="jiodiscound" :jioexdensions="jioexdensions"  :rate="rate" :validity="validity" :benefits="benefits" :days="days" :dailydata="dailydata" :backvalitity="backvalitity" :smslimit="smslimit">
-                    </card>
-                </div>
-                 <div class="col-lg-4">
-                    <card  :jiodiscound="jiodiscound" :jioexdensions="jioexdensions"  :rate="rate" :validity="validity" :benefits="benefits" :days="days" :dailydata="dailydata" :backvalitity="backvalitity" :smslimit="smslimit">
-                    </card>
-                </div>
-            </div>
+            <card>
+            </card>
             <!-- END:  Popular plans ========= -->
             <!-- START: view more ========= -->
             <div class="viewmore m-5">
@@ -322,49 +310,49 @@
                             <h5 class="font-medium mb-4">A coming together of visionaries.</h5>
                         </div>
                     </div>
-                <div class="row brand-partners-carousel">
+                <div class="row brand-partners-carousel" v-for="(brands,index) in brandpartners" :key="index" >
                     <div class="col-lg-4 col-12" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide20">
                         <h5 class="font-medium pb-md-4 pb-3">Brand Partners </h5>
                         <div class="col-section-two col-section-wrapper d-flex flex-wrap align-item-center justify-content-center col-section-two">
                             <div class="section-icon-img">
                                 <div> 
-                                    <img src="../../../assets/images/brandpartners/Brand-Partners-samsung.png" class="w-100" alt="Samsung" loading="lazy">
+                                    <img :src="brands.img" class="w-100" alt="Samsung" loading="lazy">
                                 </div>
                             </div>
                             <div class="section-icon-img">
                                 <div>
-                                    <img src="../../../assets/images/brandpartners/Brand-Partners-apple.png" class="w-100" alt="Apple " loading="lazy">
+                                    <img :src="brands.img" class="w-100" alt="Apple " loading="lazy">
                                 </div>
                             </div>
                             <div class="section-icon-img">
                                 <div>
-                                    <img src="../../../assets/images/brandpartners/Brand-Partners-google.png" class="w-100" alt="Google" loading="lazy">
+                                    <img :src="brands.img" class="w-100" alt="Google" loading="lazy">
                                 </div>
                                 
                             </div>
                         <div class="section-icon-img">
                             <div>
-                                <img src="../../../assets/images/brandpartners/Brand-Partners-oppo.png" class="w-100" alt="Oppo" loading="lazy">
+                                <img :src="brands.img" class="w-100" alt="Oppo" loading="lazy">
                             </div>
                         </div>
                         <div class="section-icon-img">
                             <div>
-                                <img src="../../../assets/images/brandpartners/Brand-Partners-mi.png" class="w-100" alt="MI" loading="lazy">
+                                <img :src="brands.img" class="w-100" alt="MI" loading="lazy">
                             </div>
                         </div>
                         <div class="section-icon-img">
                             <div>
-                                <img src="../../../assets/images/brandpartners/Brand-Partners-vivo.png" class="w-100" alt="Vivo" loading="lazy">
+                                <img :src="brands.img" class="w-100" alt="Vivo" loading="lazy">
                             </div>
                         </div>
                         <div class="section-icon-img">
                             <div>
-                                <img src="../../../assets/images/brandpartners/Brand-Partners-one-plus.png" class="w-100" alt="One Plus " loading="lazy">
+                                <img :src="brands.img" class="w-100" alt="One Plus " loading="lazy">
                             </div>
                         </div>
                         <div class="section-icon-img">
                             <div>
-                                <img src="../../../assets/images/brandpartners/Brand-Partners-realme.png" class="w-100" alt="Realme" loading="lazy">
+                                <img :src="brands.img" class="w-100" alt="Realme" loading="lazy">
                             </div>
                         </div>
                         <div class="section-icon-img">
@@ -457,24 +445,8 @@
             </section> 
             <!-- END: banner img ========= --> 
             <!-- START:icons sec ========= -->
-           <div class="row my-5">
-               <div class="col-3">
-                   <iconscard :Discover="Discover">                    
-                   </iconscard>
-               </div>
-               <div class="col-3">
-                   <iconscard :Discover="Discover">                    
-                   </iconscard>
-               </div>
-               <div class="col-3">
-                   <iconscard :Discover="Discover">                    
-                   </iconscard>
-               </div>
-               <div class="col-3">
-                   <iconscard :Discover="Discover">                    
-                   </iconscard>
-               </div>
-           </div>
+           <iconscard>                    
+           </iconscard>
             <!-- END: icons sec ========= --> 
             <div class="m-auto section_btn text-center d-flex justify-content-center">
                 <button type="button" class="jds-btn secondary large fixed-btn d-flex text-center align-items-center">
@@ -580,9 +552,6 @@
         </div>
         <!-- END: More from Jio ========= --> 
         <!-- START:carosule from Jio ========= --> 
-       
-           
-       
         <!-- END: carosule from Jio ========= -->
         <div class="container">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -658,6 +627,7 @@
                         </div>
                     </div>
                 </div>
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -668,7 +638,6 @@
                 </button>
             </div>
         </div>
-       
     </div>
 </template>
 
@@ -679,16 +648,82 @@ export default {
     name:'index', 
     data() {
         return {
-            jiodiscound: '20% JioMart Maha Cashback',
-            jioexdensions: 'Truly Unlimited Calls!',
-            rate: '249',
-            validity: 'Validity',
-            days: '28 days',
-            benefits: 'Benefits',
-            dailydata: '2 GB/day',
-            backvalitity: 'Unlimited Voice Call',
-            smslimit: 'Unlimited SMS (100/day)',
-            Discover: "Discover",
+            brandpartners:[
+			{
+				id: 1,
+				img: require('../../../assets/images/brandpartners/Brand-Partners-samsung.png'),
+			},
+			{
+				id: 2,
+				img: require('../../../assets/images/brandpartners/Brand-Partners-apple.png'),
+			},
+			{
+				id: 3,
+				img: require('../../../assets/images/brandpartners/Brand-Partners-google.png'),
+			},
+			{
+				id: 4,
+                img: require('../../../assets/images/brandpartners/Brand-Partners-oppo.png'),
+				
+			},
+			{
+				id: 5,
+				img: require('../../../assets/images/brandpartners/Brand-Partners-mi.png'),
+			},
+            {
+				id: 6,
+				img: require('../../../assets/images/brandpartners/Brand-Partners-vivo.png'),
+			},
+            {
+				id: 7,
+				img: require('../../../assets/images/brandpartners/Brand-Partners-one-plus.png'),
+			},
+            {
+				id: 8,
+				img: require('../../../assets/images/brandpartners/Brand-Partners-realme.png'),
+			},
+            {
+				id: 9,
+				img: require(''),
+			},
+            {
+				id: 10,
+				img: require(''),
+			},
+            {
+				id: 11,
+				img: require(''),
+			},
+            {
+				id: 12,
+				img: require(''),
+			},
+            {
+				id: 13,
+				img: require(''),
+			},
+            {
+				id: 14,
+				img: require(''),
+			},
+            {
+				id: 15,
+				img: require(''),
+			},
+            {
+				id: 16,
+				img: require(''),
+			},
+            {
+				id: 17,
+				img: require(''),
+			},
+            {
+				id: 18,
+				img: require(''),
+			},
+            
+		],
         }
     },
     components:{
