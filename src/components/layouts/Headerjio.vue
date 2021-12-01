@@ -1,7 +1,7 @@
 <template>
     <div>
         <header>
-            <nav class="navbar navbar-expand-sm fixed-top shadow">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top shadow">
                 <div class="container">
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul class="navbar-nav">

@@ -37,7 +37,14 @@ const routes = [
         path: '/signin',
         name: 'signin',
         component: () => import('@/components/pages/signin'),
+        
     },
+    {
+        path: '/mobile',
+        name: 'mobile',
+        component: () => import('@/components/pages/signin/icons'), 
+    },
+  
 ]
 export default new Router({
     mode: 'history',
