@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="ic_jiocinema" transform="translate(0.328 0.654)">
+    <g id="Group_111999" data-name="Group 111999" transform="translate(-0.328 -0.654)">
+      <rect id="Rectangle_8850" data-name="Rectangle 8850" width="30" height="30" rx="6" transform="translate(0 0)" fill="#d01586"/>
+    </g>
+    <g id="Group_112005" data-name="Group 112005" transform="translate(5.86 6.064)">
+      <g id="Group_112004" data-name="Group 112004" transform="translate(0)">
+        <g id="Group_112003" data-name="Group 112003">
+          <g id="Group_112001" data-name="Group 112001" transform="translate(0.402 6.011)">
+            <path id="Path_4505" data-name="Path 4505" d="M839.861,545.615v8.679a1.875,1.875,0,0,0,1.875,1.874h13.47a1.875,1.875,0,0,0,1.875-1.875V546.56a.945.945,0,0,0-.945-.945H839.868m10.575,5.641-2.5,1.982a.515.515,0,0,1-.878-.365V548.91a.514.514,0,0,1,.878-.363l2.5,1.982A.515.515,0,0,1,850.443,551.256Z" transform="translate(-839.861 -545.615)" fill="#fff"/>
+          </g>
+          <g id="Group_112002" data-name="Group 112002">
+            <path id="Path_4506" data-name="Path 4506" d="M856.907,544.1l-.262-1.894a.939.939,0,0,0-1.059-.8l-.295.041-.941,3.029-2.722.379.942-3.03-1.049.145-1.538.214-.942,3.032-2.72.377.942-3.031-1.074.149-1.514.21-.941,3.032-2.721.379.942-3.032-1.569.218a.938.938,0,0,0-.8,1.059l.268,1.916.127.912,16.119-2.243A.943.943,0,0,0,856.907,544.1Z" transform="translate(-839.579 -541.397)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

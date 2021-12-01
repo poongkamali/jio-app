@@ -6,7 +6,7 @@
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                            <router-link class="nav-link text-dark ps-0" to="/">DASHBOARD</router-link>
+                            <router-link class="nav-link text-dark ps-0 active" to="/">DASHBOARD</router-link>
                             </li>
                             <li class="nav-item">
                             <router-link class="nav-link text-dark" to="/prepaid">PREPAID</router-link>
@@ -46,12 +46,17 @@ export default {
     
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     .nav-link{
         font-size: 17px;
         font-weight: 500;
     }
+    // .nav-link.active {
+    //     margin-bottom: 10px;
+    //     border-bottom: 4px solid darkblue !important;
+    //     color: darkblue;
+    // }
     .jiologo {
-        width: 50px;
+        height: 50px;
     }
 </style>

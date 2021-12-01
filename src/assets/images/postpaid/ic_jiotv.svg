@@ -1,0 +1,9 @@
+<svg id="ic_jiotv" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <rect id="Rectangle_9855" data-name="Rectangle 9855" width="30" height="30" rx="6" fill="#e30513"/>
+  <g id="Group_16" data-name="Group 16" transform="translate(5.745 7.532)">
+    <path id="Path_11940" data-name="Path 11940" d="M23.972,34.6H19.057a.957.957,0,0,0,0,1.915h4.915a.982.982,0,0,0,.957-.957A.94.94,0,0,0,23.972,34.6Z" transform="translate(-12.291 -20.047)" fill="#fff"/>
+    <path id="Path_11941" data-name="Path 11941" d="M25.723,11.8H10.787A1.731,1.731,0,0,0,9,13.523V22.46a1.784,1.784,0,0,0,1.787,1.787h15a1.784,1.784,0,0,0,1.787-1.787V13.523A1.829,1.829,0,0,0,25.723,11.8Zm-5.17,6.894-3.064,2.426a.638.638,0,0,1-1.085-.447V15.885a.638.638,0,0,1,1.085-.447l3.064,2.426A.67.67,0,0,1,20.553,18.694Z" transform="translate(-9 -11.8)" fill="#fff"/>
+  </g>
+  <path id="Path_64469" data-name="Path 64469" d="M0,15Z" fill="#fdc3c7" opacity="0.2"/>
+  <rect id="Rectangle_9856" data-name="Rectangle 9856" width="30" height="30" rx="6" fill="#fdc3c7" opacity="0.2"/>
+</svg>
