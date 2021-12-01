@@ -44,6 +44,21 @@ const routes = [
         name: 'mobile',
         component: () => import('@/components/pages/signin/icons'), 
     },
+    {
+        path: '/Jiofi',
+        name: 'mobile',
+        component: () => import('@/components/pages/signin/icons'), 
+    },
+    {
+        path: '/fiber',
+        name: 'mobile',
+        component: () => import('@/components/pages/signin/icons'), 
+    },
+    {
+        path: '/link',
+        name: 'mobile',
+        component: () => import('@/components/pages/signin/icons'), 
+    },
   
 ]
 export default new Router({

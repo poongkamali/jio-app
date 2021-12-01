@@ -16,7 +16,7 @@
                     </li>
                     <li class="nav-item text-dark border-0" role="presentation">
                         <button class="pt-4 nav-link active border-0 text-underline text-center align-items-center" id="contact-tab " data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
-                            <router-link to="/mobile"> 
+                            <router-link to="/jiofi"> 
                                 <img src="../../../assets/images/jiofi-login.svg" alt="ic-mobile" class="img-fluid">
                                 <div class="span">JioFi</div>
                             </router-link>
@@ -24,7 +24,7 @@
                     </li>
                     <li class="nav-item text-dark border-0" role="presentation">
                         <button class="nav-link active border-0 text-underline" id="profile-tab " data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
-                            <router-link to="/mobile"> 
+                            <router-link to="/fiber"> 
                                 <img src="../../../assets/images/ic_jiofiber.svg" alt="ic-mobile" class="ic-mobile">
                                 <div class="span">JioFiber</div>
                             </router-link>
@@ -32,7 +32,7 @@
                     </li>
                     <li class="nav-item text-dark border-0" role="presentation">
                         <button class="nav-link active border-0 text-underline" id="contact-tab " data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
-                            <router-link to="/mobile"> 
+                            <router-link to="/link"> 
                                 <img src="../../../assets/images/ic_jiolink.svg" alt="ic-mobile" class="ic-mobile">
                                 <div class="span">JioLink</div>
                             </router-link>
