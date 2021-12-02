@@ -594,7 +594,7 @@ export default {
          reachargepartners:[
 			{
 				id: 1,
-				money: require('../../../assets/images/brand-recharge/Recharge-Partners-phone-pe.png"'),
+				money: require('../../../assets/images/brand-recharge/Recharge-Partners-phone-pe.png'),
 			},
 			{
 				id: 2,
@@ -625,7 +625,7 @@ export default {
         retailpartners:[
             {
                 id:1,
-                reseller: required('../../../assets/images/retail_partner/Retail-Partners-sangeetha.png'),
+                reseller: require('../../../assets/images/retail_partner/Retail-Partners-sangeetha.png'),
             },
             {
                 id:2,
