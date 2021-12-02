@@ -8,7 +8,17 @@
                             <h2 class="text-dark"> {{ mobile }} {{ fiber }} {{ jiolink }} {{ JioFi }} Login </h2>
                         </div>
                         <div class="container  justify-content-center w-75">
-                            <div class="form-group">
+                            <div class="form-group my-2">
+                                <label for="Joinumber" class="pr-1"> Customer Name :</label>
+                                <input type="text" class="form-control round_border" placeholder="Enter your Name here">
+                               
+                            </div>
+                            <div class="form-group my-2">
+                                <label for="Joinumber" class="pr-1"> Location :</label>
+                                <input type="text" class="form-control round_border" placeholder="Enter your Location here">
+                                
+                            </div>
+                            <div class="form-group my-2">
                                 <label for="Joinumber" class="pr-1"> Jio number</label>
                                 <input type="text" class="form-control round_border" placeholder="Enter your Jio number here">
                                 <button type="button" width="15rem" height="2.875rem" disabled="" class="form-Button align-items-center">Generate OTP</button>
