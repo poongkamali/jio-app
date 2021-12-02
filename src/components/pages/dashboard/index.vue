@@ -324,39 +324,9 @@
                     <div class="col-lg-4 col-12" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide21">
                         <h5 class="font-medium pb-md-4 pb-3">Recharge Partners</h5>
                         <div class="col-section-one col-section-wrapper d-flex flex-wrap align-item-center justify-content-center ">
-                            <div class="section-icon-img">
+                            <div class="section-icon-img" v-for="(recharge,index) in reachargepartners" :key="index">
                                 <div>
-                                    <img src="../../../assets/images/brand-recharge/Recharge-Partners-phone-pe.png" class="w-100" alt="PhonePe" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="section-icon-img">
-                                <div>
-                                    <img src="../../../assets/images/brand-recharge/Recharge-Partners-paytm.png" class="w-100" alt="Paytm" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="section-icon-img">
-                                <div>
-                                    <img src="../../../assets/images/brand-recharge/Recharge-Partners-gpay.png" class="w-100" alt="G Pay" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="section-icon-img">
-                                <div>
-                                    <img src="../../../assets/images/brand-recharge/Recharge-Partners-Amazon.png" class="w-100" alt="Amazon" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="section-icon-img">
-                                <div>
-                                    <img src="../../../assets/images/brand-recharge/freecharge_b.png" class="w-100" alt="Freecharge" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="section-icon-img">
-                                <div>
-                                    <img src="../../../assets/images/brand-recharge/mobikwik_b.png" class="w-100" alt="Mobikwik UPI" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="section-icon-img">
-                                <div>
-                                    <img src="../../../assets/images/retail_partner/mobikwik_UPI_b_v2.png" class="w-100" alt="Mobikwik" loading="lazy">
+                                    <img :src="recharge.money"  class="w-100" alt="PhonePe" loading="lazy">
                                 </div>
                             </div>
                         </div>
@@ -364,34 +334,9 @@
                     <div class="col-lg-4 col-12" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide22">
                         <h5 class="font-medium pb-md-4 pb-3">Retail Partners</h5>
                         <div class="col-section-three col-section-wrapper d-flex flex-wrap align-item-center justify-content-center border-0">
-                            <div class="section-icon-img">
+                            <div class="section-icon-img" v-for="(retail,index) in retailpartners" :key="index">
                                 <div>
-                                    <img src="../../../assets/images/retail_partner/Retail-Partners-sangeetha.png" class="w-100" alt="Sangeetha" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="section-icon-img">
-                                <div>
-                                    <img src="../../../assets/images/retail_partner/Retail-Partners-bhatia.png" class="w-100" alt="Bhatia's" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="section-icon-img">
-                                <div>
-                                    <img src="../../../assets/images/retail_partner/Retail-Partners-poorvika.png" class="w-100" alt="Poorvika" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="section-icon-img">
-                                <div>
-                                    <img src="../../../assets/images/retail_partner/Retail-Partners-quickr.png" class="w-100" alt="QuickrBazaar" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="section-icon-img">
-                                <div>
-                                    <img src="../../../assets/images/retail_partner/home_shop_18_b.png" class="w-100" alt="HomeShop18" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="section-icon-img">
-                                <div>
-                                    <img src="../../../assets/images/retail_partner/mobikwik_UPI_b_v2.png" class="w-100" alt="Mobikwik Upi" loading="lazy">
+                                    <img :src="retail.reseller" class="w-100" alt="Sangeetha" loading="lazy">
                                 </div>
                             </div>
                         </div> 
@@ -645,9 +590,64 @@ export default {
 				id: 9,
 				img: require('../../../assets/images/brandpartners/LG_b.png'),
 			},
-           
-            
 		],
+         reachargepartners:[
+			{
+				id: 1,
+				money: require('../../../assets/images/brand-recharge/Recharge-Partners-phone-pe.png"'),
+			},
+			{
+				id: 2,
+				money: require('../../../assets/images/brand-recharge/Recharge-Partners-paytm.png'),
+			},
+			{
+				id: 3,
+				money: require('../../../assets/images/brand-recharge/Recharge-Partners-gpay.png'),
+			},
+			{
+				id: 4,
+                money: require('../../../assets/images/brand-recharge/Recharge-Partners-Amazon.png'),
+				
+			},
+			{
+				id: 5,
+				money: require('../../../assets/images/brand-recharge/freecharge_b.png'),
+			},
+            {
+				id: 6,
+				money: require('../../../assets/images/brand-recharge/mobikwik_b.png'),
+			},
+            {
+				id: 7,
+				money: require('../../../assets/images/retail_partner/mobikwik_UPI_b_v2.png'),
+			},
+		],
+        retailpartners:[
+            {
+                id:1,
+                reseller: required('../../../assets/images/retail_partner/Retail-Partners-sangeetha.png'),
+            },
+            {
+                id:2,
+                reseller: require('../../../assets/images/retail_partner/Retail-Partners-bhatia.png')
+            },
+            {
+                id:3,
+                reseller: require('../../../assets/images/retail_partner/Retail-Partners-poorvika.png')
+            },
+            {
+                id:4,
+                reseller: require('../../../assets/images/retail_partner/Retail-Partners-quickr.png')
+            },
+            {
+                id:5,
+                reseller: require('../../../assets/images/retail_partner/home_shop_18_b.png')
+            },
+            {
+                id:6,
+                reseller: require('../../../assets/images/retail_partner/mobikwik_UPI_b_v2.png')
+            }
+        ]
         }
     },
     components:{
