@@ -49,7 +49,21 @@ export default {
             isEditing: false,
             selectedIndex: null,
             disabled: true,
-            
+             name: '',
+            location: '',
+            number: '',
+            customers:[
+                {
+                    name: 'uma',
+                    location: 'chennai',
+                    number: 9873673821
+                },
+                {
+                    name: 'poongkamali',
+                    location: 'chennai',
+                    number: 7436673858
+                },
+            ],
             
         }
     },

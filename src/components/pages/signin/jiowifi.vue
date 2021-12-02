@@ -41,21 +41,7 @@ export default {
     props: ['mobile', 'fiber', 'jiolink', 'JioFi'],
     data() {
         return {
-            name: '',
-            location: '',
-            number: '',
-            customers:[
-                {
-                    name: 'uma',
-                    location: 'chennai',
-                    number: 9873673821
-                },
-                {
-                    name: 'poongkamali',
-                    location: 'chennai',
-                    number: 7436673858
-                },
-            ],
+           
         }
     },
     methods: {
@@ -92,8 +78,6 @@ export default {
     font-weight: 400!important;
     font-size: 1rem!important;
     border-radius: 0.625rem;
-    background-color: #E7EAF4!important;
-    border-color: #E7EAF4!important;
     margin: 1.875rem auto 1.875rem auto;
     color: #C4C9D9!important;
     height: 2.875rem!important;
