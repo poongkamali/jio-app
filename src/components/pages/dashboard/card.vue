@@ -12,7 +12,7 @@
                                 <div class="display-2 font-black">
                                    <span class="jioFont-rupee h2 align-text-top mr-1 pt-2">&#8377;</span>{{ recharge.rate }}
                                 </div>
-                                <div class="h5 font-medium"> {{ recharge.jioexdensions }}</div>
+                                <div class="h5 fw-medium"> {{ recharge.jioexdensions }}</div>
                             </div>
                         </div>
                         <div class="circle-panel">
@@ -20,30 +20,30 @@
                                 <div class="circle-plan-details">
                                     <div class="d-flex justify-content-between data-panel">
                                         <div class="">
-                                            <div class="h6 font-medium mb-1">{{ recharge.validity }}</div>
-                                            <div class="h5 font-bold">{{ recharge.days }}</div>
+                                            <div class="h6 fw-medium mb-1">{{ recharge.validity }}</div>
+                                            <div class="h5 fw-bold">{{ recharge.days }}</div>
                                         </div>
                                         <div class="">
-                                            <div class="h6 font-medium mb-1">{{ recharge.benefits }} </div>
-                                            <div class="h5 font-bold"> {{ recharge.dailydata }}</div>
+                                            <div class="h6 fw-medium mb-1">{{ recharge.benefits }} </div>
+                                            <div class="h5 fw-bold"> {{ recharge.dailydata }}</div>
                                         </div>
                                     </div>
                                     <div class="d-flex app-icons-list align-items-end">
                                         <div class="app-icon">
-                                            <img src="../../../assets/images/ic_jiotv-n.svg" alt="JioTV logo">
+                                            <img :src="recharge.logo1" alt="JioTV logo">
                                         </div>
                                         <div class="app-icon">
-                                            <img src="../../../assets/images/ic_jiocinema-n.svg" alt="JioCinema logo">
+                                            <img :src="recharge.logo2" alt="JioCinema logo">
                                         </div>
                                         <div class="d-flex align-items-center">
-                                            <span class="overline-01 font-medium"><span class="d-block">+2 more</span></span>
+                                            <span class="overline-01 fw-medium"><span class="d-block">+2 more</span></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-action mt-auto d-flex justify-content-between align-items-center">
                                 <a href="#" class="flip-toggle">
-                                    <div class="button-lg font-medium">Know More</div>
+                                    <div class="button-lg fw-medium">Know More</div>
                                 </a>
                                 <div class="common_btn">
                                     <button type="button" class="jds-btn text-decoration-none text-white text-center fixed-btn d-inline-flex align-items-center justify-content-center border-0" tabindex="0">
@@ -59,41 +59,43 @@
                         <div class="card-body">
                             <div class="card-back-inner p-0 border-0">
                                 <div class="card-body-back-inner p-0 mb-5">
-                                    <div class="h5 font-medium back-list mb-0">
-                                        <div class="back-list-li"> {{ recharge.backvalitity }}</div>
-                                        <div class="back-list-li"> {{ recharge.smslimit }}</div>
+                                    <div class="h5 fw-bold back-list mb-0">
+                                        <div class="back-list-li my-3"> {{ recharge.facility }}</div>
+                                         <div class="back-list-li my-2"> {{ recharge.backvalitity }}</div>
+                                        <div class="back-list-li my-2"> {{ recharge.smslimit }}</div>
                                     </div>
                                 </div>
                                 <div class="jio-plan-app pt-5 mt-5">
-                                    <h6 class="h6 font-medium neutral-70">JioApps &amp; Other Subscriptions</h6>
+                                    <h6 class="h6 fw-medium neutral-70">JioApps &amp; Other Subscriptions</h6>
                                     <div class="d-flex justify-content-around flex-wrap app-icons-list multi-icons-list ">
                                         <div class="app-wrap-icon">
                                             <div class="app-icon">
-                                            <img src="../../../assets/images/ic_jiotv-n.svg" alt="JioTV logo">
+                                            <img :src="recharge.backlogo1" alt="JioTV logo">
                                             </div>
                                         </div>
                                         <div class="app-wrap-icon">
                                             <div class="app-icon">
-                                                <img src="../../../assets/images/ic_jiocinema-n.svg" alt="JioCinema logo">
+                                                <img :src="recharge.backlogo2" alt="JioCinema logo">
                                             </div>
                                         </div>
                                         <div class="app-wrap-icon">
                                             <div class="app-icon">
-                                                <img src="../../../assets/images/ic_jiosecurity-n.svg" alt="JioSecurity logo">
+                                                <img :src="recharge.backlogo3" alt="JioSecurity logo">
                                             </div>
                                         </div>
                                         <div class="app-wrap-icon">
                                             <div class="app-icon">
-                                                <img src="../../../assets/images/ic_jiocloud-n.svg" alt="JioCloud logo">
+                                                <img :src="recharge.backlogo4" alt="JioCloud logo">
                                             </div>
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-action mt-auto d-flex justify-content-between align-items-center">
                             <a href="#" class="flip-toggle">
-                                <div class="button-lg font-medium">Back</div>
+                                <div class="button-lg fw-medium">Back</div>
                             </a>
                             <div class="common_btn">
                                 <button type="button" class="jds-btn text-decoration-none text-white text-center fixed-btn d-inline-flex align-items-center justify-content-center border-0" tabindex="0">
@@ -123,32 +125,54 @@ export default {
                     days: '28 days',
                     benefits: 'Benefits',
                     dailydata: '2 GB/day',
+                    logo1: require('../../../assets/images/ic_jiotv-n.svg'),
+                    logo2: require('../../../assets/images/ic_jiocinema-n.svg'),
                     backvalitity: 'Unlimited Voice Call',
                     smslimit: 'Unlimited SMS (100/day)',
+                    backlogo1: require('../../../assets/images/ic_jiotv-n.svg'),
+                    backlogo2: require('../../../assets/images/ic_jiocinema-n.svg'),
+                    backlogo3: require('../../../assets/images/ic_jiosecurity-n.svg'),
+                    backlogo4: require('../../../assets/images/ic_jiocloud-n.svg')
                 },
                 {
                     id:2,
-                    jiodiscound: '20% JioMart Maha Cashback',
+                    jiodiscound: 'Prepaid Plan',
                     jioexdensions: 'Truly Unlimited Calls!',
-                    rate: '249',
+                    rate: '601',
                     validity: 'Validity',
                     days: '28 days',
                     benefits: 'Benefits',
-                    dailydata: '2 GB/day',
+                    dailydata: '3 GB/day',
+                    facility: '1 year Disney+ Hotstar Mobile Subscription worth $ 601',
+                    logo1: require('../../../assets/images/ic_jiotv-n.svg'),
+                    logo2: require('../../../assets/images/ic_dph-n.svg'),
                     backvalitity: 'Unlimited Voice Call',
                     smslimit: 'Unlimited SMS (100/day)',
+                    backlogo1: require('../../../assets/images/ic_jiotv-n.svg'),
+                    backlogo2: require('../../../assets/images/ic_jiocinema-n.svg'),
+                    backlogo3: require('../../../assets/images/ic_jiosecurity-n.svg'),
+                    backlogo4: require('../../../assets/images/ic_jiocloud-n.svg')
+                   
                 },
                 {
                     id:3,
-                    jiodiscound: '20% JioMart Maha Cashback',
+                    jiodiscound: 'Prepaid Plan',
                     jioexdensions: 'Truly Unlimited Calls!',
-                    rate: '249',
+                    rate: '2837',
                     validity: 'Validity',
-                    days: '28 days',
+                    days: '365 days',
                     benefits: 'Benefits',
                     dailydata: '2 GB/day',
+                    facility: '1 year Disney+ Hotstar Mobile Subscription worth ',
+                    logo1: require('../../../assets/images/ic_jiotv-n.svg'),
+                    logo2: require('../../../assets/images/ic_jiocinema-n.svg'),
                     backvalitity: 'Unlimited Voice Call',
                     smslimit: 'Unlimited SMS (100/day)',
+                    backlogo1: require('../../../assets/images/ic_jiotv-n.svg'),
+                    backlogo2: require('../../../assets/images/ic_jiocinema-n.svg'),
+                    backlogo3: require('../../../assets/images/ic_jiosecurity-n.svg'),
+                    backlogo4: require('../../../assets/images/ic_jiocloud-n.svg')
+                    
                 },
             ]
         }
@@ -233,7 +257,7 @@ export default {
 .jio-badge {
     min-width: 0.75rem;
     height: 0.75rem;
-    background-color: #c71720;
+    background-color: #315cbb;
     border: 1px solid #fff;
     border-radius: 1.5rem;
     font-size: 14px;   

@@ -682,46 +682,7 @@ export default {
 				id: 8,
 				img: require('../../../assets/images/brandpartners/Brand-Partners-realme.png'),
 			},
-            {
-				id: 9,
-				img: require(''),
-			},
-            {
-				id: 10,
-				img: require(''),
-			},
-            {
-				id: 11,
-				img: require(''),
-			},
-            {
-				id: 12,
-				img: require(''),
-			},
-            {
-				id: 13,
-				img: require(''),
-			},
-            {
-				id: 14,
-				img: require(''),
-			},
-            {
-				id: 15,
-				img: require(''),
-			},
-            {
-				id: 16,
-				img: require(''),
-			},
-            {
-				id: 17,
-				img: require(''),
-			},
-            {
-				id: 18,
-				img: require(''),
-			},
+           
             
 		],
         }
