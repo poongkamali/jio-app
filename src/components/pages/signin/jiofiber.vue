@@ -1,8 +1,7 @@
 <template>
 <div class="py-5 my-5">
     <jiowifi  :fiber="fiber"></jiowifi>
-    <jiowifi  :jiolink="jiolink"></jiowifi>
-    <jiowifi  :JioFi="JioFi"></jiowifi>
+    
 </div>
 </template>
 <script>

@@ -36,6 +36,7 @@
     </div>
 </template>
 <script>
+import {index} from '@/customer'
 export default {
     name:'jiowifi',
     props: ['mobile', 'fiber', 'jiolink', 'JioFi'],

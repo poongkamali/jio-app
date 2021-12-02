@@ -44,6 +44,9 @@
  
 export default {
     name: 'index',
+    props:[
+        'customer',
+    ],
     data(){
         return {
             isEditing: false,
