@@ -310,56 +310,15 @@
                             <h5 class="font-medium mb-4">A coming together of visionaries.</h5>
                         </div>
                     </div>
-                <div class="row brand-partners-carousel" v-for="(brands,index) in brandpartners" :key="index" >
+                <div class="row brand-partners-carousel"  >
                     <div class="col-lg-4 col-12" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide20">
                         <h5 class="font-medium pb-md-4 pb-3">Brand Partners </h5>
                         <div class="col-section-two col-section-wrapper d-flex flex-wrap align-item-center justify-content-center col-section-two">
-                            <div class="section-icon-img">
+                            <div class="section-icon-img" v-for="(brands,index) in brandpartners" :key="index">
                                 <div> 
                                     <img :src="brands.img" class="w-100" alt="Samsung" loading="lazy">
                                 </div>
                             </div>
-                            <div class="section-icon-img">
-                                <div>
-                                    <img :src="brands.img" class="w-100" alt="Apple " loading="lazy">
-                                </div>
-                            </div>
-                            <div class="section-icon-img">
-                                <div>
-                                    <img :src="brands.img" class="w-100" alt="Google" loading="lazy">
-                                </div>
-                                
-                            </div>
-                        <div class="section-icon-img">
-                            <div>
-                                <img :src="brands.img" class="w-100" alt="Oppo" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="section-icon-img">
-                            <div>
-                                <img :src="brands.img" class="w-100" alt="MI" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="section-icon-img">
-                            <div>
-                                <img :src="brands.img" class="w-100" alt="Vivo" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="section-icon-img">
-                            <div>
-                                <img :src="brands.img" class="w-100" alt="One Plus " loading="lazy">
-                            </div>
-                        </div>
-                        <div class="section-icon-img">
-                            <div>
-                                <img :src="brands.img" class="w-100" alt="Realme" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="section-icon-img">
-                            <div>
-                                <img src="../../../assets/images/brandpartners/LG_b.png" class="w-100" alt="LG" loading="lazy">
-                            </div>
-                        </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-12" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide21">
@@ -681,6 +640,10 @@ export default {
             {
 				id: 8,
 				img: require('../../../assets/images/brandpartners/Brand-Partners-realme.png'),
+			},
+             {
+				id: 9,
+				img: require('../../../assets/images/brandpartners/LG_b.png'),
 			},
            
             
