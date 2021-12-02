@@ -10,18 +10,18 @@
                         <div class="container  justify-content-center w-75">
                             <div class="form-group my-2">
                                 <label for="Joinumber" class="pr-1"> Customer Name :</label>
-                                <input type="text" class="form-control round_border" placeholder="Enter your Name here">
+                                <input type="text" v-model="name"  class="form-control round_border" placeholder="Enter your Name here">
                                
                             </div>
                             <div class="form-group my-2">
                                 <label for="Joinumber" class="pr-1"> Location :</label>
-                                <input type="text" class="form-control round_border" placeholder="Enter your Location here">
+                                <input type="text" v-model="location" class="form-control round_border" placeholder="Enter your Location here">
                                 
                             </div>
                             <div class="form-group my-2">
                                 <label for="Joinumber" class="pr-1"> Jio number</label>
-                                <input type="text" class="form-control round_border" placeholder="Enter your Jio number here">
-                                <button type="button" width="15rem" height="2.875rem" disabled="" class="form-Button align-items-center">Generate OTP</button>
+                                <input type="text" v-model="number" class="form-control round_border" placeholder="Enter your Jio number here">
+                                <button type="button" width="15rem"  height="2.875rem" class="form-Button align-items-center" @click.prevent="signin">Signin</button>
                             </div>
                             
                         </div>
@@ -41,7 +41,36 @@ export default {
     props: ['mobile', 'fiber', 'jiolink', 'JioFi'],
     data() {
         return {
-            
+            name: '',
+            location: '',
+            number: '',
+            customers:[
+                {
+                    name: 'uma',
+                    location: 'chennai',
+                    number: 9873673821
+                },
+                {
+                    name: 'poongkamali',
+                    location: 'chennai',
+                    number: 7436673858
+                },
+            ],
+        }
+    },
+    methods: {
+        signin(){
+            this.customers.push({
+                name:this.name,
+                location:this.location,
+                number:this.number,
+            })
+            this.name='',
+            this.location='',
+            this.number='',
+            this.$router.push( {
+                    path: this.$route.query.redirect || '/customer'
+            })
         }
     },
 }
