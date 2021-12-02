@@ -21,7 +21,7 @@
                             <div class="form-group my-2">
                                 <label for="Joinumber" class="pr-1"> Jio number</label>
                                 <input type="text" v-model="number" class="form-control round_border" placeholder="Enter your Jio number here">
-                                <button type="button" width="15rem"  height="2.875rem" class="form-Button align-items-center" @click.prevent="signin">Signin</button>
+                                <button type="button" width="15rem"  height="2.875rem" class="form-Button align-items-center btn btn-primary" @click.prevent="signin">Signin</button>
                             </div>
                             
                         </div>
